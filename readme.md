@@ -1,7 +1,7 @@
 ## Description
 
-This is a tiny python3 implementation of a markov chain algorithm to generate text trained on a corpus.<br>
-you'll find the model in markov.py.<br>
+This is a tiny python3 implementation of a markov chain algorithm to generate text similar to a training corpus.<br>
+You'll find the model in markov.py.<br>
 An example available through $ python3 freestyle.py, trained on french music lyrics.<br><br>
 
 ## Output:
