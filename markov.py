@@ -15,39 +15,43 @@ def tokenize(s):
             out.append(w)
     return out
 
-def createModel(text):
-    tokens = tokenize(text)
-    model = {}
+class Model:
+    def __init__(self):
+        self.dic = {}
 
-    #Add all the words in the model:
-    for i in range(len(tokens)):
-        model[tokens[i]]={}
+    def train(self, text):
+        tokens = tokenize(text)
 
-    #Add the following words
-    for i in range(len(tokens)-1):
-        try:
-            model[tokens[i]][tokens[i+1]] = model[tokens[i]][tokens[i+1]] + 1
-        except KeyError:
-            model[tokens[i]][tokens[i+1]] = 1
+        #Add all the words in the model:
+        for i in range(len(tokens)):
+           self.dic[tokens[i]]={}
 
-    return model
+        #Add the links between words
+        for i in range(len(tokens)-1):
+            try:
+                self.dic[tokens[i]][tokens[i+1]] = self.dic[tokens[i]][tokens[i+1]] + 1
+            except KeyError:
+                self.dic[tokens[i]][tokens[i+1]] = 1
 
-def nextWord(model, previous):
-    subModel = model[previous]
-    counts = np.array([subModel[word] for word in subModel.keys()])
-    probas = (counts/sum(counts)).cumsum()
-    seed = random.random()
-    i=0
-    while probas[i]<=seed:
-        i+=1
+    def predictNext(self, previous):
+        subModel = self.dic[previous]
+        counts = np.array([subModel[word] for word in subModel.keys()])
+        probas = (counts/sum(counts)).cumsum()
+        seed = random.random()
+        i=0
+        while probas[i]<=seed:
+            i+=1
+        return list(subModel.keys())[i]
 
-    return list(subModel.keys())[i]
-
-def generateSentence(model):
-    out = ""
-    currword = '\n'
-    while(len(out)<1000):
-        out += currword
-        out += " "
-        currword = nextWord(model, currword)
-    return out
+    def generateSentence(self):
+        out = ""
+        currword = '\n'
+        while(len(out)<300):
+            out += currword
+            out += " "
+            currword = self.predictNext(currword)
+        while(currword!="\n"):
+            out += currword
+            out += " "
+            currword = self.predictNext(currword)
+        return out
