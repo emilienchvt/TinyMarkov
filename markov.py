@@ -2,9 +2,21 @@ import nltk
 import random
 import math
 import numpy as np
+from nltk.tokenize import SpaceTokenizer
+
+def tokenize(s):
+    out = []
+    tokens = SpaceTokenizer().tokenize(s)
+    for w in tokens:
+        if w[:1]=="\n":
+            out.append("\n")
+            out.append(w[1:])
+        else:
+            out.append(w)
+    return out
 
 def createModel(text):
-    tokens = nltk.word_tokenize(text)
+    tokens = tokenize(text)
     model = {}
 
     #Add all the words in the model:
@@ -33,18 +45,9 @@ def nextWord(model, previous):
 
 def generateSentence(model):
     out = ""
-    indexFirstWord = int(random.random()*len(model))
-    currword = list(model.keys())[indexFirstWord]
-    while(len(out)<300):
+    currword = '\n'
+    while(len(out)<1000):
         out += currword
         out += " "
         currword = nextWord(model, currword)
     return out
-
-
-####### Example
-with open("nekfeu.txt") as f:
-    text = f.read()
-
-model = createModel(text)
-print(generateSentence(model))

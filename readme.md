@@ -1,3 +1,5 @@
-This is a tiny python3 implementation of markov chain algorithm.
-In this case the model is trained on nekfeu.txt (lyrics scraped using a script on another repo) 
-to run: python3 markov.txt: prints a 300 characters text
+This is a tiny python3 implementation of a markov chain algorithm to generate text trained on a corpus.
+
+you'll find the model in markov.py.
+
+An example available through $ python3 freestyle_nekfeu.py, trained on french rap lyrics.
