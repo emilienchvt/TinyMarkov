@@ -1,10 +1,18 @@
 ## Description
 
-This is a tiny python3 implementation of a markov chain algorithm to generate text similar to a training corpus.<br>
-You'll find the model in markov.py.<br>
-An example available through $ python3 freestyle.py, trained on french music lyrics.<br>
-You can also try to force the algorithm to follow a certain topic with theme.py<br><br>
+### markov.py
+implementation of a markov model class. features:
+- training a model on a class
+- generating sentences based on the model
+- focus the model on a specific topic (given by a word) by applying a similarity factor to the model
 
+### example1: freestyle:
+
+generating lyrics from Nekfeu and Georges Brasses, and mixing their models to generate text from the union.
+
+### example2: theme:
+
+displaying topic_fit and text generated after several updates of the model to focus on the tocim "famille"
 
 ## Output freestyle:
 
