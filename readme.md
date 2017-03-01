@@ -53,7 +53,7 @@ Il avait paru<br>
  Hu, dia, hop là!<br>
  Qu'elle est un humain sur la réalité, j'aimerais l'aider<br>
 
-## Output theme
+## Output theme - la mort
 
 ### Pour Nekfeu:
 Indice de similitude avec la mort, avant focus:
@@ -71,7 +71,7 @@ Une petite chanson sur la mort:<br><br>
 J'ai côtoyé des plats comme l'Armée céleste<br>
  J’veux le crâne<br>
  Car, quand un voleur de fou frère oublie tes écus<br>
-##Pour Georges Brassens:
+##Pour Georges Brassens:``
 Indice de similitude avec la mort, avant focus:
 -0.287970934099<br>
 Indice de similitude avec la mort, après focus:
