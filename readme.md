@@ -56,8 +56,6 @@ Il avait paru<br>
 ## Output theme
 
 ### Pour Nekfeu:
-Essayons d'orienter les paroles ver le thème de la mort:<br><br>
-Pour Nekfeu:<br><br>
 Indice de similitude avec la mort, avant focus:
 -0.51362947456<br>
 Indice de similitude avec la mort, après focus:
@@ -72,8 +70,8 @@ Une petite chanson sur la mort:<br><br>
 <br>
 J'ai côtoyé des plats comme l'Armée céleste<br>
  J’veux le crâne<br>
- Car, quand un voleur de fou frère oublie tes écus<br><br>
-Pour Georges Brassens:<br><br>
+ Car, quand un voleur de fou frère oublie tes écus<br>
+##Pour Georges Brassens:
 Indice de similitude avec la mort, avant focus:
 -0.287970934099<br>
 Indice de similitude avec la mort, après focus:
