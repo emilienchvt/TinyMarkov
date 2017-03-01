@@ -53,42 +53,36 @@ Il avait paru<br>
  Hu, dia, hop là!<br>
  Qu'elle est un humain sur la réalité, j'aimerais l'aider<br>
 
-## Output theme - la mort
+## Output theme - nekfeu - thème: la famille
 
 ### Pour Nekfeu:
-Indice de similitude avec la mort, avant focus:
--0.51362947456<br>
-Indice de similitude avec la mort, après focus:
-2.15564268008<br>
-Une petite chanson sur la mort:<br><br>
+#### 0 itérations, fit_topic: -0.00279357266227
+Quand j'suis peut-être te grugent<br>
+Trop de Air Max blanches et ses pensées s’accumulent et index en apparence<br>
+J'ai pas s’mentir, on vivra<br>
+Je m'en tape pour tes rêves ?<br>
+Mes loups rôdent dans le moteur ronronnera<br>
+<br>
+J'compte pas d’pilon, Quand j'galère le trou noir je pense à coup dur de l'emploi<br>
+#### 1 itération, fit_topic: 2.11359486562
 
- Des ONG dans ma vie ne juge de vie, tu paniques quand il suffit d'un homme<br>
- Est-il français ?<br>
- Que le malheur de ma haine dans le voile, elle en vie<br>
- Ton coeur souffrant<br>
- Elle m'a dit : "On tient à son trône<br>
-<br>
-J'ai côtoyé des plats comme l'Armée céleste<br>
- J’veux le crâne<br>
- Car, quand un voleur de fou frère oublie tes écus<br>
-##Pour Georges Brassens:``
-Indice de similitude avec la mort, avant focus:
--0.287970934099<br>
-Indice de similitude avec la mort, après focus:
-2.74639503484<br>
-Une petite chanson sur la mort:<br><br>
+J'irai, j'irai jusqu'au bout de vivre<br>
+Lève-toi la chaussée<br>
+J'te comprends pas dans son âge<br>
+Qui ne vais repasser<br>
+Si j’ai tous faux j'en ai deux-trois<br>
+I'll be Calling you moving mad bro<br>
+J’aime tes belles maisons, vous ils m'parlent de chez l'épicier ouvert les passants qui veulent surtout pas d’taff fuir le son sauveur, ma vie te manquent de sable<br>
 
- Pour cause de génie, un mari bricoleur<br>
-Boîte à un peu d'envie<br>
-<br>
-Mon bel âne bâté.<br>
-Moi qui sévit maintenant<br>
-N'enlève à genoux.<br>
-<br>
-Mais un vrai squelette ambulant<br>
-C'est le voit apparaître<br>
-<br>
-Et quand il ne bande encore à l'ancêtre, en lieu d'opter pour un clocher jauni,<br>
-La lune,<br>
-Comme un peu de Paul et son jour le diable s'en fut un enfant d'ch?ur<br>
-Qui, par un bras son testament<br>
+#### 2 itérations, fit_topic: 6.28422371344
+Dans cette femme et ses vieux son héritage au sein de ses fils de fric<br>
+On se téléphoner<br>
+Quand viennent de vie et j’suis un père til-gen, j’voulais l’divan<br>
+J'ai beau être pauvre qu'avoir de sable<br>
+J'relève la vie<br>
+Tu crois être heureux avoir la vie et elle à ses vieux dans cette fille à son et sa mère<br>
+
+#### 3 itérations, fit_topic: 10.6326274274
+Avec mes gens se ferme la mère de son père de frère à son et ses fils de sa mère à vie et elle se greffer<br>
+Tout seul moyen d'se rattraper<br>
+Vu ma vie et elle avait envie de ses fils de vivre dans cette vie et ses fils de vivre dans ses fils de frère à cette fille de vivre dans cette vie de vivre dans son âge et elle peut être pauvre à son père de naître et elle se téléphoner<br>

@@ -11,7 +11,9 @@ w2v = word2vec.load('fr_small.bin')
 def sim(w1, w2):
     try:
         vec1, vec2 = np.array(w2v[w1]), np.array(w2v[w2])
-        return (vec1*vec2).sum()
+        norm1=np.linalg.norm(vec1)
+        norm2=np.linalg.norm(vec2)
+        return (vec1*vec2).sum()/(norm1*norm2)
     except KeyError:
         return 0
 
