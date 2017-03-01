@@ -19,7 +19,7 @@ def sim(w1, w2):
 
 #This funtion is applied to the distance to the topic in order to change the graph's coefficient.
 def filtre(s, strength):
-    return 1/(1+np.exp(-strength*(s-0.1)))
+    return 1/(1+np.exp(-strength*(s-0.5)))
         #To be improved
 
 #tokenizer. Specific handling of \n
@@ -117,7 +117,7 @@ class Model:
     def generateSentence(self):
         out = ""
         currword = '\n'
-        while(len(out)<300):
+        while(len(out)<600):
             out += currword
             out += " "
             currword = self.predictNext(currword)

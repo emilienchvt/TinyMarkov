@@ -8,17 +8,21 @@ with open("stupeflip.txt") as f:
 model = markov.Model()
 model.train(text)
 
-n=100
-topic = "amour"
+n=20
+topic = "animal"
+stren = 10
 
 def report():
-    str(model.generateSentence()+str(np.array([np.array([(markov.sim(x, topic)) for x in model.generateSentence().split()]).sum() for i in range(n)]).mean()))
+    return str(np.array([np.array([(markov.sim(x, topic)) for x in model.generateSentence().split()]).sum() for i in range(n)]).mean())
 
 print("without topic:"+report())
-model.focus(topic, strength=30)
-print("After 1 focus:"+report())
-model.focus(topic, strength=30)
-print("After 2 focus:"+report())
-model.focus(topic, strength=30)
-print("After 2 focus:"+report())
-model.focus(topic, strength=30)
+print(model.generateSentence())
+model.focus(topic, strength=stren)
+print("\n\nAfter 1 focus:"+report())
+print(model.generateSentence())
+model.focus(topic, strength=stren)
+print("\n\nAfter 2 focus:"+report())
+print(model.generateSentence())
+model.focus(topic, strength=stren)
+print("\n\nAfter 3 focus:"+report())
+print(model.generateSentence())

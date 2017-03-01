@@ -38,7 +38,7 @@ displaying topic_fit and text generated after several updates of the model to fo
  Il avait paru<br>
 <br>
 
-### Mélangés:
+### Mélangés(Stupeflip, PNL, Nekfeu, Brassens):
 
 Je l'ai laissée faire ce siècle, entre elles n’auront jamais la la faire des joko sur mon avenue <br>
 Quand mes potos boivent trop vilaine, il s’met en casseurs <br>
