@@ -39,23 +39,8 @@ class Model:
     def __init__(self):
         self.dic = {}
 
-    #to train a model on a corpus
-    def train(self, text):
-        tokens = tokenize(text)
-
-        #Add all the words in the model:
-        for i in range(len(tokens)):
-           self.dic[tokens[i]]={}
-
-        #Add the links between words
-        for i in range(len(tokens)-1):
-            try:
-                self.dic[tokens[i]][tokens[i+1]] = self.dic[tokens[i]][tokens[i+1]] + 1
-            except KeyError:
-                self.dic[tokens[i]][tokens[i+1]] = 1
-
     #softmax function, to be applied to a model
-    def softmax(self):
+    def softmaxModel(self):
         for prev in self.dic.keys():
             oldvec = np.array(list(self.dic[prev].values()))
             sm = oldvec.sum()
@@ -66,26 +51,56 @@ class Model:
             for foll in self.dic[prev].keys():
                 self.dic[prev][foll]=newvec[i]
                 i+=1
-        return 0
+
+
+    #to train a model on a corpus
+    def train(self, text, factor=1, applySoft=True):
+        tokens = tokenize(text)
+
+        #Add all the words in the model:
+        for i in range(len(tokens)):
+            try:
+                self.dic[tokens[i]]
+            except:
+                self.dic[tokens[i]]={}
+
+        #Add the links between words
+        for i in range(len(tokens)-1):
+            try:
+                self.dic[tokens[i]][tokens[i+1]] += factor
+            except KeyError:
+                self.dic[tokens[i]][tokens[i+1]] = factor
+
+        if applySoft==True:
+            self.softmaxModel()
+
+    #for multiple documents: texts and coeffs are arrays of the same size.
+    #Higher Coeff[i] means that text[i] will be more represented in the model
+    def trainMultiple(self, texts, coeffs=None):
+        if coeffs==None:
+            coeffs=np.ones(len(texts))
+        for i in range(len(texts)):
+            a = coeffs[i]
+            b = 1/len(texts[i])
+            self.train(texts[i], factor=a*b, applySoft=False)
+        self.softmaxModel()
 
     #met tous les mots à 1.
     def flat(self):
         for prev in self.dic.keys():
             for foll in self.dic[prev].keys():
                 self.dic[prev][foll]=1
-        return 0
+        self.softmaxModel()
 
 
     #to have it focus on a topic (1 word)
     def focus(self, topic, strength=4):
-        out=[]
         #loop over the integers:
         for prev in self.dic.keys():
             for foll in self.dic[prev].keys():
                 sim(foll, topic)
                 self.dic[prev][foll]*= filtre(sim(foll, topic), strength)
-                out.append(filtre(sim(foll, topic), strength))
-        return out
+        self.softmaxModel()
 
     #next word, generated randomly according to the model
     def predictNext(self, previous):
@@ -108,6 +123,6 @@ class Model:
             currword = self.predictNext(currword)
         while(currword!="\n"):
             out += currword
-            out += " "
             currword = self.predictNext(currword)
+            out += " "
         return out

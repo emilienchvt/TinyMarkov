@@ -23,43 +23,29 @@ displaying topic_fit and text generated after several updates of the model to fo
  I'm doing<br>
  Elle danse comme Sankara<br>
  On est grand jour est la jungle<br>
- 2 heures du rap, elle en s'en aille, garder cette fille au foyer, des choses essentielles que t'étais seul aux filles parce qu'on pense à toi et des autres, on s'connaît pas ma princesse ne viendras plus qu'un mirage, les cuites<br>
 
 
 ### Georges Brassens:
 
- Et n'entra plus qu'une blonde<br>
- Il en chur,<br>
- Bien récompensée...<br>
- Le grand mouchoir en meute<br>
- La plus d'argent<br>
- Et je t'ai connue,<br>
- D'interrompre l'échauffouré'.<br>
  Je bande<br>
- Du fin que dans ma foi,<br>
- Le sable fin,<br>
- Une niche idéale.<br>
  Mais c'étaient mes bras lancaient des neiges d'antan?<br>
  Un champ d'honneur.<br>
 
-Je suis dit, bonnes gens,<br>
-Pour reconnaître<br>
-Que l'on a<br>
-De beaux assassinats.<br>
-Il avait paru<br>
+ Je suis dit, bonnes gens,<br>
+ Pour reconnaître<br>
+ Que l'on a<br>
+ De beaux assassinats.<br>
+ Il avait paru<br>
 <br>
 
 ### Mélangés:
 
- [Alpha Waan]<br>
- Bellek à coup j'ai pas juger ceux d'mon charbonnier<br>
- Qui est mécontente<br>
- Parce que nul doute du 19, on a balayé le temps sont pas d'boss, pas conduire à Montfaucon,<br>
- Mais dans les veines<br>
- Qu'il est pris dans la sniffer<br>
- C’monde n’est qu’un pharmacien<br>
- Hu, dia, hop là!<br>
- Qu'elle est un humain sur la réalité, j'aimerais l'aider<br>
+Je l'ai laissée faire ce siècle, entre elles n’auront jamais la la faire des joko sur mon avenue <br>
+Quand mes potos boivent trop vilaine, il s’met en casseurs <br>
+J'arrive en bas<br>
+Tout contre laquelle j'mets c'panier du miroir élabore un parfait avenir <br>
+Sauf le péché véniel <br>
+Les gars sont chorégraphiés <br>
 
 ## Output theme - nekfeu - thème: la famille
 
@@ -68,9 +54,6 @@ Il avait paru<br>
 Quand j'suis peut-être te grugent<br>
 Trop de Air Max blanches et ses pensées s’accumulent et index en apparence<br>
 J'ai pas s’mentir, on vivra<br>
-Je m'en tape pour tes rêves ?<br>
-Mes loups rôdent dans le moteur ronronnera<br>
-<br>
 J'compte pas d’pilon, Quand j'galère le trou noir je pense à coup dur de l'emploi<br>
 #### 1 itération, fit_topic: 2.11359486562
 
@@ -78,16 +61,11 @@ J'irai, j'irai jusqu'au bout de vivre<br>
 Lève-toi la chaussée<br>
 J'te comprends pas dans son âge<br>
 Qui ne vais repasser<br>
-Si j’ai tous faux j'en ai deux-trois<br>
-I'll be Calling you moving mad bro<br>
-J’aime tes belles maisons, vous ils m'parlent de chez l'épicier ouvert les passants qui veulent surtout pas d’taff fuir le son sauveur, ma vie te manquent de sable<br>
 
 #### 2 itérations, fit_topic: 6.28422371344
 Dans cette femme et ses vieux son héritage au sein de ses fils de fric<br>
 On se téléphoner<br>
 Quand viennent de vie et j’suis un père til-gen, j’voulais l’divan<br>
-J'ai beau être pauvre qu'avoir de sable<br>
-J'relève la vie<br>
 Tu crois être heureux avoir la vie et elle à ses vieux dans cette fille à son et sa mère<br>
 
 #### 3 itérations, fit_topic: 10.6326274274
